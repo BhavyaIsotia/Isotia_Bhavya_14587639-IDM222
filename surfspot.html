@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@500;600&family=Satisfy&display=swap"
+      rel="stylesheet"
+    >
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurfSpot Social | Bhavya Isotia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="surfspot.css">
+</head>
+
+<body class="theme-soft case-study-page">
+
+<!-- Theme Toggle -->
+<input type="checkbox" id="theme-toggle" class="theme-toggle">
+
+<label for="theme-toggle" class="theme-switch" aria-label="Toggle dark mode">
+    <span class="switch-track">
+        <span class="switch-icon switch-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M21 14.2A8.5 8.5 0 0 1 9.8 3a9 9 0 1 0 11.2 11.2Z"></path>
+            </svg>
+        </span>
+
+        <span class="switch-icon switch-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 1.8v2.5M12 19.7v2.5M22.2 12h-2.5M4.3 12H1.8M19.2 4.8l-1.8 1.8M6.6 17.4l-1.8 1.8M19.2 19.2l-1.8-1.8M6.6 6.6 4.8 4.8"></path>
+            </svg>
+        </span>
+
+        <span class="switch-thumb"></span>
+    </span>
+</label>
+
+
+<div class="page-shell">
+<!-- STICKY NAV -->
+<header class="site-header">
+    <div class="pill-nav-wrapper">
+        <nav class="pill-nav" aria-label="Main site navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="creative.html">Creative</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="case-hero">
+    <div class="case-hero-content">
+        <p class="case-label">Web Application · Surfing · Community</p>
+
+        <h1>SurfSpot Social</h1>
+
+        <p class="case-hero-desc">
+            SurfSpot Social is a community focused surf platform that blends real-time marine weather,
+            interactive maps, and collaborative beach notes all designed to help surfers explore safely,
+            connect locally, and share knowledge.
+        </p>
+
+        <div class="case-pill-row" aria-label="Team and project details">
+            <span class="case-pill">Team · Ctrl + Sea</span>
+            <span class="case-pill">Members · Claudia · Bhavya · Chara</span>
+            <span class="case-pill">Tools · Node.js, PostgreSQL, Leaflet.js</span>
+        </div>
+
+        <div class="case-meta-grid">
+            <div>
+                <span class="case-pill meta-pill">Goal</span>
+                <p>Build a digital surf companion that merges conditions, discovery, and community.</p>
+            </div>
+
+            <div>
+                <span class="case-pill meta-pill">Tech Stack</span>
+                <p>Node.js · PostgreSQL · Leaflet.js · Open-Meteo API</p>
+            </div>
+
+            <div>
+                <span class="case-pill meta-pill">Themes</span>
+                <p>Safety, exploration, environmental awareness</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="case-container">            
+<!-- OVERVIEW -->
+<section class="case-section" id="overview">
+    <h2>Project Overview</h2>
+
+    <div class="text-columns">
+        <p>
+            SurfSpot Social brings together surf forecasting, mapping, and community insights into a single
+            clean, accessible interface. Surfers can browse beaches, check conditions, and read or share
+            location-specific notes.
+        </p>
+
+        <p>
+            We focused on a lightweight user experience, one where condition data loads instantly, maps remain
+            interactive, and posts feel personal yet structured. This project was developed as a full-stack
+            learning experience combining APIs, database design, and UI workflow design.
+        </p>
+    </div>
+</section>
+
+<!-- FEATURE HIGHLIGHTS -->
+<section class="case-section" id="features">
+    <h2>Key Features</h2>
+
+    <div class="insight-grid">
+        <article class="case-card blush">
+            <h3>Interactive Surf Map</h3>
+            <p>Powered by Leaflet.js, enabling users to explore surf spots by clicking markers on a global map.</p>
+        </article>
+
+        <article class="case-card blush">
+            <h3>Live Marine Conditions</h3>
+            <p>Open-Meteo Marine API provides swell height, wind speed, water temperature, and tide levels.</p>
+        </article>
+
+        <article class="case-card blush">
+            <h3>Community Notes</h3>
+            <p>Each beach has a dedicated comment hub where surfers share tips, warnings, and local insights.</p>
+        </article>
+
+        <article class="case-card blush">
+            <h3>Account System</h3>
+            <p>Users can sign up, log in, and manage posts with secure, cookie-based authentication.</p>
+        </article>
+    </div>
+</section>
+
+<section class="case-section" id="preview">
+    <h2>Homepage Preview</h2>
+
+    <div class="featured-media">
+        <img src="assets/surfspot/homepage.png" alt="SurfSpot Social homepage interface mockup">
+    </div>
+</section>
+
+<!-- UI GALLERY -->
+<section class="case-section" id="ui-gallery">
+    <h2>Figma Mockups</h2>
+
+    <div class="swipe-carousel surfspot-carousel">
+        <div class="swipe-slide">
+            <img src="assets/surfspot/figmaframe1.png" alt="SurfSpot interactive map UI">
+        </div>
+
+        <div class="swipe-slide">
+            <img src="assets/surfspot/figmaframe2.png" alt="SurfSpot beach details interface">
+        </div>
+
+        <div class="swipe-slide">
+            <img src="assets/surfspot/figmaframe3.png" alt="SurfSpot user posts layout">
+        </div>
+    </div>
+</section>
+
+<!-- THE CORE SCREENS -->
+<section class="case-section" id="screens">
+    <h2>Core Screens</h2>
+
+    <div class="mockup-grid">
+        <article class="mockup-card">
+            <div class="mockup-media">
+                <img src="assets/surfspot/Map_ui.png" alt="Map interface mockup">
+            </div>
+            <h3>Global Surf Map</h3>
+            <p>Click markers to access real-time weather and user notes.</p>
+        </article>
+
+        <article class="mockup-card">
+            <div class="mockup-media">
+                <img src="assets/surfspot/weatherandforcast.png" alt="Beach details mockup">
+            </div>
+            <h3>Beach Detail Page</h3>
+            <p>Data-rich layout showing weather, swell, and surfer commentary.</p>
+        </article>
+
+        <article class="mockup-card">
+            <div class="mockup-media mockup-media-portrait">
+                <img src="assets/surfspot/login.png" alt="Login screen for SurfSpot Social">
+            </div>
+            <h3>Account & Login</h3>
+            <p>Simple entry into the app’s posting and saving features.</p>
+        </article>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="case-section" id="links">
+    <h2>Explore the Project</h2>
+
+    <div class="case-cta-block">
+        <a
+            href="https://surf-spot-social.vercel.app/"
+            class="cta-btn cta-btn-primary"
+            target="_blank"
+            rel="noopener"
+        >
+            Visit SurfSpot Social
+        </a>
+
+        <a
+            href="https://github.com/claudiavalencia01/Surf-Spot-Social"
+            class="cta-btn cta-btn-secondary"
+            target="_blank"
+            rel="noopener"
+        >
+            View GitHub Repository
+        </a>
+    </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p>© 2026 Bhavya Isotia</p>
+    </div>
+</footer>
+</div>
+</body>
+</html>
