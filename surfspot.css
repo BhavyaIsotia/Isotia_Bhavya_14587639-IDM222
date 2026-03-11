@@ -123,6 +123,11 @@
   border-radius: 1rem;
 }
 
+.open-image-link {
+  display: block;
+  text-decoration: none;
+}
+
 .swipe-carousel {
   display: flex;
   gap: 1rem;
