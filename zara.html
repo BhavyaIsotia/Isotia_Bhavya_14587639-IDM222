@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@500;600&family=Satisfy&display=swap"
+      rel="stylesheet"
+    >
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Redesign | Bhavya Isotia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="zara.css">
+</head>
+
+<body class="theme-soft case-study-page">
+
+  <!-- Theme Toggle -->
+  <input type="checkbox" id="theme-toggle" class="theme-toggle">
+
+  <label for="theme-toggle" class="theme-switch" aria-label="Toggle dark mode">
+    <span class="switch-track">
+      <span class="switch-icon switch-moon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="presentation">
+          <path d="M21 14.2A8.5 8.5 0 0 1 9.8 3a9 9 0 1 0 11.2 11.2Z"></path>
+        </svg>
+      </span>
+
+      <span class="switch-icon switch-sun" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="presentation">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 1.8v2.5M12 19.7v2.5M22.2 12h-2.5M4.3 12H1.8M19.2 4.8l-1.8 1.8M6.6 17.4l-1.8 1.8M19.2 19.2l-1.8-1.8M6.6 6.6 4.8 4.8"></path>
+        </svg>
+      </span>
+
+      <span class="switch-thumb"></span>
+    </span>
+  </label>    
+
+    <div class="page-shell">
+<!-- UNIVERSAL PILL NAV -->
+<header class="site-header">
+    <div class="pill-nav-wrapper">
+        <nav class="pill-nav" aria-label="Main site navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="creative.html">Creative</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </div>
+</header>
+
+<!-- CASE STUDY HERO -->
+<section class="case-hero">
+    <div class="case-hero-content">
+        <p class="case-label">Redesigning · Website</p>
+        <h1>Revitalizing Zara’s Digital Flagship</h1>
+
+        <p class="case-hero-desc">
+            A research-backed redesign that keeps Zara’s aspirational aesthetic while fixing the
+            navigation, filtering, and readability pain points that frustrate real shoppers.
+        </p>
+
+        <div class="case-pill-row" aria-label="Role, timeline and tools">
+            <span class="case-pill">Role · UX Researcher &amp; UI Designer</span>
+            <span class="case-pill">Timeline · 4 Months</span>
+            <span class="case-pill">Tools · Figma, Maze, FigJam</span>
+        </div>
+
+        <div class="case-meta-grid">
+            <div>
+                <span class="case-pill meta-pill">Methods</span>
+                <p>Card sorts, competitive audit, multi-device user flows</p>
+            </div>
+
+            <div>
+                <span class="case-pill meta-pill">Deliverables</span>
+                <p>Sitemaps, responsive wireframes, clickable prototype</p>
+            </div>
+
+            <div>
+                <span class="case-pill meta-pill">Focus</span>
+                <p>Navigation clarity, discovery, sustainability storytelling</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="case-container">
+
+<!-- OVERVIEW -->
+<section class="case-section" id="overview">
+    <h2>Why Redesign Zara.com?</h2>
+
+    <div class="text-columns">
+        <p>
+            As a loyal Zara shopper, I’m constantly inspired by the brand’s chic styling, but the online
+            experience rarely feels as effortless as the clothes. The mix of portrait imagery, tiny typography,
+            and buried filters leads to endless scrolling and guesswork. Friends echoed that friction, which
+            made this the perfect challenge for IDM 211.
+        </p>
+        <p>
+            My goal was to protect the minimalist brand language while modernizing the UX for time-conscious,
+            fashion-forward customers. The redesign focuses on stronger information hierarchy, clear calls-to-action,
+            and streamlined flows across desktop, tablet, and mobile.
+        </p>
+    </div>
+</section>
+
+<!-- RESEARCH / AUDIENCE -->
+<section class="case-section highlight" id="audience">
+    <div class="section-heading">
+        <span class="eyebrow">Research</span>
+        <h2>Understanding the Audience</h2>
+    </div>
+
+    <div class="insight-grid">
+        <article class="case-card blush">
+            <h3>Typical Users</h3>
+            <p>
+                Zara’s e-commerce base skews toward young professionals who value trendiness, versatility,
+                and efficiency. They juggle work, events, and social life meaning slow browsing or low readability
+                is a deal-breaker.
+            </p>
+        </article>
+
+        <article class="case-card blush">
+            <h3>Persona · Sophia Reynolds</h3>
+            <p>
+                28-year-old marketing manager in Brooklyn. Loves curated wardrobes and follows influencers for
+                inspiration, yet feels overwhelmed by Zara’s filters and typography. She wants quick occasion-based
+                suggestions and responsive mobile flows.
+            </p>
+        </article>
+
+        <article class="case-card blush">
+            <h3>Brand Strengths</h3>
+            <p>
+                High-fashion photography, magazine-like layouts, and constantly refreshed collections keep Zara
+                aspirational. The redesign keeps those strengths but reorganizes them for clarity.
+            </p>
+        </article>
+
+        <article class="case-card blush">
+            <h3>Gaps to Solve</h3>
+            <ul>
+                <li>Navigation that hides filters or buries key categories.</li>
+                <li>Poor readability from low contrast text and tiny fonts.</li>
+                <li>Limited personalization and overwhelming scrolling on mobile.</li>
+            </ul>
+        </article>
+    </div>
+
+    <div class="persona-block">
+        <div class="persona-copy">
+            <h3>Persona Snapshot</h3>
+            <p>
+                Sophia is motivated by curation and speed. She bounces if filters feel clunky, but she’ll stay
+                loyal if seasonal stories, sustainability, and tailored looks are surfaced fast. This persona
+                guided decisions around navigation, layout, and content emphasis.
+            </p>
+
+            <p class="mobile-image-link">
+                <a href="assets/zara/zara_persona.png" target="_blank" rel="noopener">Open persona snapshot</a>
+            </p>
+        </div>
+
+        <a
+            href="assets/zara/zara_persona.png"
+            class="persona-visual open-image-link"
+            target="_blank"
+            rel="noopener"
+        >
+            <img
+                src="assets/zara/zara_persona.png"
+                alt="Persona collage for Sophia, a Zara shopper"
+                class="persona-image"
+            >
+        </a>
+    </div>
+</section>
+
+<!-- USER INSIGHTS -->
+<section class="case-section dark" id="users">
+    <div class="section-heading">
+        <span class="eyebrow">Understanding the Users</span>
+        <h2>What did shoppers actually say?</h2>
+    </div>
+
+    <div class="user-insight-intro">
+        <div>
+            <p>
+                I ran a focused 9-question survey with 21 Zara shoppers who purchased within the last four months.
+                Interviews took place while they navigated the site on desktop to surface the exact screens that
+                broke their flow. The goal was to validate whether the frustration stemmed from pure UI choices
+                or from deeper issues in the experience architecture.
+            </p>
+            <p>
+                After synthesizing interviews and organizing sticky notes, the responses collapsed into two
+                recurring themes: speed and ease of use, and a desire for cohesive minimalism that still shows
+                products clearly without endless scrolling.
+            </p>
+
+            <p class="mobile-image-link">
+                <a href="assets/zara/zara-user-survey.png" target="_blank" rel="noopener">Open survey summary</a>
+            </p>
+        </div>
+
+        <a
+            href="assets/zara/zara-user-survey.png"
+            class="case-photo-slot open-image-link"
+            target="_blank"
+            rel="noopener"
+        >
+            <img
+                src="assets/zara/zara-user-survey.png"
+                alt="Survey synthesis board for Zara redesign"
+                class="case-photo"
+            >
+        </a>
+    </div>
+
+    <div class="user-insight-grid">
+        <article class="user-card">
+            <span class="pill-label">01 · Efficiency of Use</span>
+            <p>
+                More than half of participants mentioned the difficulty of navigating categories and filters.
+                Some leave mid browse for ASOS, Mango, or H&amp;M because Zara feels “busy” and hides the basics.
+            </p>
+        </article>
+
+        <article class="user-card">
+            <span class="pill-label">02 · Cohesive Minimalism</span>
+            <p>
+                Many wanted a simplified interface that keeps Zara’s aesthetic but prioritizes landscape imagery
+                and clear product presentation. They want to see outfits without jumping back and forth between screens.
+            </p>
+        </article>
+    </div>
+
+    <div class="game-plan">
+        <h3>The Game Plan</h3>
+        <p>
+            These insights shaped the north star: fix navigation friction and polish product presentation without
+            losing the brand’s edge. The redesign zeroes in on two main actions:
+        </p>
+        <ol>
+            <li>Minimize and declutter the navigation so categories and filters stay visible and consistent.</li>
+            <li>Elevate product pages with breathable layouts and landscape imagery that show details in fewer clicks.</li>
+        </ol>
+    </div>
+</section>
+
+<!-- CARD SORT & IA -->
+<section class="case-section" id="cardsort">
+    <h2>Card Sort &amp; Information Architecture</h2>
+
+    <p>
+        I ran an open card sort with three fashion-savvy shoppers. They prioritized familiar anchors such as
+        <strong>Women</strong>, <strong>Men</strong>, and <strong>Sale</strong>, but quickly surfaced missing areas:
+    </p>
+
+    <div class="card-sort-grid">
+        <article>
+            <h3>What Stayed</h3>
+            <ul>
+                <li>Top level gendered categories for quick scanning.</li>
+                <li>Sale receiving higher prominence for value driven entry points.</li>
+                <li>Lookbook content retained but woven into collections.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>What Changed</h3>
+            <ul>
+                <li>New “Featured Collections” grouped by season and trend.</li>
+                <li>Sustainability elevated with sub-pages like Eco Materials.</li>
+                <li>Consolidated inspirational content to reduce visual clutter.</li>
+            </ul>
+        </article>
+    </div>
+
+    <p>
+        These insights informed a reorganized sitemap and category hierarchy that keeps the browsing mental model
+        intact while introducing clearer entry points for campaigns and sustainability stories.
+    </p>
+</section>
+
+<!-- MULTI-DEVICE FLOWS -->
+<section class="case-section" id="flows">
+    <h2>Multi-Device Flow Analysis</h2>
+
+    <p class="flows-intro">
+        I mapped complete shopping journeys on desktop, tablet, and mobile to audit friction from entry through checkout.
+        The diagrams uncovered repeated breaks in continuity whenever users searched or tried to filter.
+    </p>
+
+    <p class="flow-note">
+        On smaller screens you can swipe through the device flows. Tap or click any diagram to open the full-size image.
+    </p>
+
+    <div class="swipe-carousel flow-carousel">
+        <figure class="flow-panel swipe-slide">
+            <div class="flow-panel-copy">
+                <h3>Desktop</h3>
+                <ul>
+                    <li>Homepage hero rotates portrait media that competes with navigation.</li>
+                    <li>Search launches a separate page, forcing context switching.</li>
+                    <li>Filters are hidden; trying to find socks jumps users between gendered pages.</li>
+                    <li>Videos open full screen and block the browsing path.</li>
+                </ul>
+            </div>
+
+            <a href="assets/zara/zara-flow-desktop.png" class="flow-panel-image" target="_blank" rel="noopener">
+                <img src="assets/zara/zara-flow-desktop.png" alt="Desktop user flow diagram for Zara">
+            </a>
+
+            <figcaption>Desktop flow mapping primary browsing and purchasing paths.</figcaption>
+        </figure>
+
+        <figure class="flow-panel swipe-slide">
+            <div class="flow-panel-copy">
+                <h3>Tablet</h3>
+                <ul>
+                    <li>Touch-optimized imagery loads slowly, increasing bounce risk.</li>
+                    <li>Product pages demand extra scrolling and collapse details.</li>
+                    <li>Forms are not tuned for touch, so checkout becomes tedious.</li>
+                </ul>
+            </div>
+
+            <a href="assets/zara/zara-flow-tablet.png" class="flow-panel-image" target="_blank" rel="noopener">
+                <img src="assets/zara/zara-flow-tablet.png" alt="Tablet user flow diagram for Zara">
+            </a>
+
+            <figcaption>Tablet flow highlighting touch and layout pain points.</figcaption>
+        </figure>
+
+        <figure class="flow-panel swipe-slide">
+            <div class="flow-panel-copy">
+                <h3>Mobile</h3>
+                <ul>
+                    <li>Hero media dominates the viewport; users must scroll before seeing content.</li>
+                    <li>Search still redirects instead of expanding inline.</li>
+                    <li>Limited results display and subtle add-to-cart feedback reduces confidence.</li>
+                    <li>Checkout inputs are cramped, slowing down purchases.</li>
+                </ul>
+            </div>
+
+            <a href="assets/zara/zara-flow-mobile.png" class="flow-panel-image" target="_blank" rel="noopener">
+                <img src="assets/zara/zara-flow-mobile.png" alt="Mobile user flow diagram for Zara">
+            </a>
+
+            <figcaption>Mobile flow showing scrolling and search friction.</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- OPPORTUNITIES -->
+<section class="case-section" id="opportunities">
+    <h2>Opportunities for Improvement</h2>
+
+    <div class="opportunity-grid">
+        <div class="opportunity-card">Inline search field that keeps users rooted in their current context.</div>
+        <div class="opportunity-card">Consistent, glanceable filters with active states across all devices.</div>
+        <div class="opportunity-card">Bold, landscape hero imagery that respects vertical space and shows outfits clearly.</div>
+        <div class="opportunity-card">Enhanced add-to-cart microinteractions for confidence and clarity.</div>
+        <div class="opportunity-card">Responsive checkout with larger inputs, better spacing, and smart defaults.</div>
+        <div class="opportunity-card">A story driven sustainability hub within Featured Collections.</div>
+    </div>
+</section>
+
+<!-- PROCESS STRIP -->
+<section class="case-section dark process-strip" id="process">
+    <div class="section-heading">
+        <span class="eyebrow">Process</span>
+        <h2>The High-Level Flow</h2>
+    </div>
+
+    <div class="process-grid">
+        <article>
+            <span class="step-number">01.</span>
+            <h3>Research</h3>
+            <p>Identified gaps in Zara’s current experience, explored competitors, and learned how real shoppers describe their frustrations.</p>
+        </article>
+
+        <article>
+            <span class="step-number">02.</span>
+            <h3>Ideation</h3>
+            <p>Sketched layout and navigation options that modernize the UI while still feeling like Zara.</p>
+        </article>
+
+        <article>
+            <span class="step-number">03.</span>
+            <h3>Design</h3>
+            <p>Built wireframes and high-fidelity screens across desktop, tablet, and mobile with special focus on hierarchy and filters.</p>
+        </article>
+
+        <article>
+            <span class="step-number">04.</span>
+            <h3>User Testing</h3>
+            <p>Tested flows with shoppers to gauge navigation clarity, scanning behavior, and path to cart efficiency.</p>
+        </article>
+    </div>
+</section>
+
+<!-- WIREFRAMES & MOCKUPS -->
+<section class="case-section" id="mockups">
+    <div class="section-heading">
+        <span class="eyebrow">Design Output</span>
+        <h2>Wireframes and Mockups</h2>
+    </div>
+
+    <div class="swipe-carousel zara-carousel">
+        <a
+            href="assets/zara/zara-wireframe-home.png"
+            class="swipe-slide open-image-link"
+            target="_blank"
+            rel="noopener"
+        >
+            <img src="assets/zara/zara-wireframe-home.png" alt="Home screen wireframe for Zara redesign">
+        </a>
+
+        <a
+            href="assets/zara/zara-wireframe-search.png"
+            class="swipe-slide open-image-link"
+            target="_blank"
+            rel="noopener"
+        >
+            <img src="assets/zara/zara-wireframe-search.png" alt="Search and filtering wireframe for Zara redesign">
+        </a>
+
+        <a
+            href="assets/zara/zara-wireframe-product.png"
+            class="swipe-slide open-image-link"
+            target="_blank"
+            rel="noopener"
+        >
+            <img src="assets/zara/zara-wireframe-product.png" alt="Product detail wireframe for Zara redesign">
+        </a>
+    </div>
+
+    <div class="mockup-grid">
+        <article class="mockup-card">
+            <a
+                href="assets/zara/zara-mockup-desktop.png"
+                class="mockup-media open-image-link"
+                target="_blank"
+                rel="noopener"
+            >
+                <img src="assets/zara/zara-mockup-desktop.png" alt="Desktop mockups of Zara redesign">
+            </a>
+            <h3>Desktop Frames</h3>
+            <ul>
+                <li>Home + New Collection hub</li>
+                <li>Filter rich search/listing pages</li>
+                <li>Cart, shipping, payment, checkout</li>
+            </ul>
+        </article>
+
+        <article class="mockup-card">
+            <a
+                href="assets/zara/zara-mockup-mobile.png"
+                class="mockup-media open-image-link"
+                target="_blank"
+                rel="noopener"
+            >
+                <img src="assets/zara/zara-mockup-mobile.png" alt="Mobile mockups of Zara redesign">
+            </a>
+            <h3>Mobile Frames</h3>
+            <ul>
+                <li>Collapsible, thumb friendly navigation</li>
+                <li>Simplified search &amp; filtering</li>
+                <li>Cart confirmation and responsive checkout</li>
+            </ul>
+        </article>
+
+        <article class="mockup-card">
+            <div class="mockup-media mockup-media-portrait">
+                <video controls playsinline preload="metadata">
+                    <source src="assets/zara/display.mp4" type="video/mp4">
+                    Your browser does not support embedded videos.
+                </video>
+            </div>
+            <h3>Final Presentation</h3>
+            <ul>
+                <li>Deck summarizing brief → research → prototype</li>
+                <li>High level storytelling for stakeholders</li>
+                <li>Links to Maze tests &amp; live prototype</li>
+            </ul>
+        </article>
+    </div>
+</section>
+
+<!-- OUTCOME -->
+<section class="case-section" id="outcome">
+    <h2>Outcome &amp; Reflection</h2>
+
+    <p>
+        Redesigning Zara’s experience underscored how closely aesthetics and usability need to work together.
+        By grounding every decision in user research from card sorts to flow audits, I was able to propose a system
+        that honors the elevated brand while actually supporting fast, intuitive shopping.
+    </p>
+    <p>
+        The next steps include refining microinteractions, stress-testing the design with more shoppers, and exploring
+        how this design language could scale to in app and in store digital touchpoints.
+    </p>
+
+    <div class="case-cta-block">
+        <a href="mailto:bbi23@drexel.edu" class="cta-btn cta-btn-primary">Discuss the Project</a>
+        <a href="creative.html" class="cta-btn cta-btn-secondary">See More Case Studies</a>
+    </div>
+
+</section>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p>© 2026 Bhavya Isotia</p>
+    </div>
+</footer>
+</div>
+</body>
+</html>
