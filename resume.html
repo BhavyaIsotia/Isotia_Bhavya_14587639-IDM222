@@ -8,69 +8,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@500;600&family=Satisfy&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Bhavya Isotia</title>
+    <title>Bhavya Isotia | Resume</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resume.css">
 </head>
 
 <body class="resume-page">
-    <input type="checkbox" id="theme-switch" class="theme-switch-input">
 
-    <label for="theme-switch" class="theme-switch" aria-label="Toggle dark mode">
-        <span class="theme-switch-track">
-            <span class="theme-switch-thumb"></span>
+<!-- Theme Toggle -->
+ <input type="checkbox" id="theme-toggle" class="theme-toggle">
+
+<label for="theme-toggle" class="theme-switch" aria-label="Toggle dark mode">
+    <span class="switch-track">
+        <span class="switch-icon switch-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M21 14.2A8.5 8.5 0 0 1 9.8 3a9 9 0 1 0 11.2 11.2Z"></path>
+            </svg>
         </span>
-    </label>
 
+        <span class="switch-icon switch-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 1.8v2.5M12 19.7v2.5M22.2 12h-2.5M4.3 12H1.8M19.2 4.8l-1.8 1.8M6.6 17.4l-1.8 1.8M19.2 19.2l-1.8-1.8M6.6 6.6 4.8 4.8"></path>
+            </svg>
+        </span>
 
-    <div class="page-shell">
+        <span class="switch-thumb"></span>
+    </span>
+</label>
 
-        <header class="site-header">
-            <div class="pill-nav-wrapper">
-                <nav class="pill-nav" aria-label="Primary navigation">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="creative.html">Creative</a>
-                    <a class="active" href="resume.html">Resume</a>
-                </nav>
-            </div>
-        </header>
+<div class="page-shell">
+<header class="site-header">
+
+<!-- UNIVERSAL PILL NAV -->
+<div class="pill-nav-wrapper">
+    <nav class="pill-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="creative.html">Creative</a>
+        <a class="active" href="resume.html">Resume</a>
+    </nav>
+</div>
+</header>
 
 <main>
 <section class="resume-page-shell">
-    <div class="resume-topbar">
-        <a href="Bhavya_Resume.pdf" class="resume-download" target="_blank">Download Resume</a>
-    </div>
 
-    <section class="resume-intro">
-        <h1 class="resume-name">Bhavya Isotia</h1>
-        <p class="resume-tagline">Computer Science + UX Design | Drexel University</p>
+<!-- DOWNLOAD BUTTON -->
+<div class="resume-topbar">
+    <a href="Bhavya_Resume.pdf" class="resume-download" target="_blank">Download Resume</a>
+</div>
 
-        <address class="resume-contact">
-            <a href="mailto:bbi23@drexel.edu">Email</a>
-            <a href="tel:+14452562619">445-256-2619</a>
-            <a href="https://www.linkedin.com/in/bhavya-isotia-203a78282/" target="_blank" rel="noopener">LinkedIn</a>
-        </address>
-    </section>
 
-            
+<!-- NAME & CONTACT -->
+<section class="resume-intro">
+    <h1 class="resume-name">Bhavya Isotia</h1>
+    <p class="resume-tagline">Computer Science + UX Design | Drexel University</p>
+
+    <address class="resume-contact">
+        <a href="mailto:bbi23@drexel.edu">Email</a>
+        <a href="tel:+14452562619">445-256-2619</a>
+        <a href="https://www.linkedin.com/in/bhavya-isotia-203a78282/" target="_blank" rel="noopener">LinkedIn</a>
+    </address>
+</section>
+
 <section class="resume-layout">
     <div class="resume-main">
-        <section class="resume-block">
-            <h2 class="resume-section-title">Education</h2>
 
-            <article class="resume-card">
-                <div class="resume-card-header">
-                    <h3>Drexel University</h3>
-                    <span class="resume-badge">Pennoni Honors College</span>
-                </div>
-                <ul class="resume-list">
-                    <li>B.S. in Computer Science</li>
-                    <li>Minor in User Experience &amp; Interaction Design</li>
-                    <li>Expected Graduation: June 2027</li>
-                </ul>
-            </article>
-        </section>
 
+<!-- EDUCATION -->
+<section class="resume-block">
+    <h2 class="resume-section-title">Education</h2>
+
+    <article class="resume-card">
+        <div class="resume-card-header">
+            <h3>Drexel University</h3>
+            <span class="resume-badge">Pennoni Honors College</span>
+        </div>
+        <ul class="resume-list">
+            <li>B.S. in Computer Science</li>
+            <li>Minor in User Experience &amp; Interaction Design</li>
+            <li>Expected Graduation: June 2027</li>
+        </ul>
+    </article>
+</section>
+
+
+<!-- EXPERIENCE -->
 <section class="resume-block">
     <h2 class="resume-section-title">Experience</h2>
 
@@ -113,8 +137,7 @@
     </article>
 </section>
 
-
-
+<!-- PROJECTS -->
 <section class="resume-block">
     <h2 class="resume-section-title">Projects</h2>
 
@@ -143,7 +166,7 @@
     </article>
 </section>
 
-
+<!-- SKILLS -->
 <section class="resume-block resume-block-mobile">
     <h2 class="resume-section-title">Technical Skills</h2>
 
@@ -183,7 +206,7 @@
     </article>
 </section>
 
-
+<!-- LEADERSHIP -->
 <section class="resume-block">
     <h2 class="resume-section-title">Leadership &amp; Involvement</h2>
 
@@ -195,45 +218,48 @@
             <li><strong>Student Volunteer</strong> — Active across Drexel organizations.</li>
         </ul>
     </article>
-    </section>
-    </div>
-    <aside class="resume-sidebar">
+</section>
+</div>
 
+<aside class="resume-sidebar">
+
+
+<!-- DESKTOP SKILLS -->
 <section class="resume-block">
     <h2 class="resume-section-title">Technical Skills</h2>
 
-    <article class="resume-card">
-        <div class="resume-skill-groups">
-            <div class="resume-skill-group">
-                <h3>Programming</h3>
-                <div class="resume-tags">
-                    <span class="resume-tag">Python</span>
-                    <span class="resume-tag">JavaScript</span>
-                    <span class="resume-tag">HTML/CSS</span>
-                    <span class="resume-tag">SQL</span>
-                </div>
+<article class="resume-card">
+    <div class="resume-skill-groups">
+        <div class="resume-skill-group">
+            <h3>Programming</h3>
+            <div class="resume-tags">
+                <span class="resume-tag">Python</span>
+                <span class="resume-tag">JavaScript</span>
+                <span class="resume-tag">HTML/CSS</span>
+                <span class="resume-tag">SQL</span>
             </div>
+        </div>
 
-            <div class="resume-skill-group">
-                <h3>Design &amp; UX</h3>
-                <div class="resume-tags">
-                    <span class="resume-tag">Figma</span>
-                    <span class="resume-tag">Wireframing</span>
-                    <span class="resume-tag">User Research</span>
-                    <span class="resume-tag">Usability Testing</span>
-                </div>
+        <div class="resume-skill-group">
+            <h3>Design &amp; UX</h3>
+            <div class="resume-tags">
+                <span class="resume-tag">Figma</span>
+                <span class="resume-tag">Wireframing</span>
+                <span class="resume-tag">User Research</span>
+                <span class="resume-tag">Usability Testing</span>
             </div>
+        </div>
 
-            <div class="resume-skill-group">
-                <h3>Tools &amp; Platforms</h3>
-                <div class="resume-tags">
-                    <span class="resume-tag">Node.js</span>
-                    <span class="resume-tag">REST APIs</span>
-                    <span class="resume-tag">Salesforce</span>
-                    <span class="resume-tag">Power BI</span>
-                    <span class="resume-tag">Jira</span>
-                </div>
+        <div class="resume-skill-group">
+            <h3>Tools &amp; Platforms</h3>
+            <div class="resume-tags">
+                <span class="resume-tag">Node.js</span>
+                <span class="resume-tag">REST APIs</span>
+                <span class="resume-tag">Salesforce</span>
+                <span class="resume-tag">Power BI</span>
+                <span class="resume-tag">Jira</span>
             </div>
+        </div>
         </div>
     </article>
 </section>
@@ -242,8 +268,7 @@
 </section>
 </main>
 
-
-
+<!-- Footer -->
 <footer class="site-footer">
     <div class="footer-inner">
         <h3>Let’s connect</h3>
@@ -257,12 +282,12 @@
     </div>
 </footer>
 
+<!-- Copyright Strip -->
 <div class="copyright-strip">
     <div class="copyright-inner">
         © 2026 Bhavya Isotia
     </div>
 </div>
-
 </div>
 
 </body>

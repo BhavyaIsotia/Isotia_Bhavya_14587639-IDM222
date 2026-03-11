@@ -1,169 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@500;600&family=Satisfy&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@500;600&family=Satisfy&display=swap" rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Bhavya Isotia</title>
-    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Bhavya Isotia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
 </head>
 
 <body class="about-page">
+  <!-- Theme Toggle -->
+  <input type="checkbox" id="theme-toggle" class="theme-toggle">
 
-    <input type="checkbox" id="theme-switch" class="theme-switch-input">
+  <label for="theme-toggle" class="theme-switch" aria-label="Toggle dark mode">
+    <span class="switch-track">
+      <span class="switch-icon switch-moon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="presentation">
+          <path d="M21 14.2A8.5 8.5 0 0 1 9.8 3a9 9 0 1 0 11.2 11.2Z"></path>
+        </svg>
+      </span>
 
-    <label for="theme-switch" class="theme-switch" aria-label="Toggle dark mode">
-        <span class="theme-switch-track">
-            <span class="theme-switch-thumb"></span>
-        </span>
-    </label>
+      <span class="switch-icon switch-sun" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="presentation">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 1.8v2.5M12 19.7v2.5M22.2 12h-2.5M4.3 12H1.8M19.2 4.8l-1.8 1.8M6.6 17.4l-1.8 1.8M19.2 19.2l-1.8-1.8M6.6 6.6 4.8 4.8"></path>
+        </svg>
+      </span>
 
-<div class="page-shell">
+      <span class="switch-thumb"></span>
+    </span>
+  </label>
 
+  <div class="page-shell">
     <header class="site-header">
-        <div class="pill-nav-wrapper">
-            <nav class="pill-nav" aria-label="Primary navigation">
-                <a href="index.html">Home</a>
-                <a class="active" href="about.html">About</a>
-                <a href="creative.html">Creative</a>
-                <a href="resume.html">Resume</a>
-            </nav>
-        </div>
+      <!-- UNIVERSAL PILL NAV -->
+      <div class="pill-nav-wrapper">
+        <nav class="pill-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="about.html">About</a>
+          <a href="creative.html">Creative</a>
+          <a href="resume.html">Resume</a>
+        </nav>
+      </div>
     </header>
 
-<main>
-    <section class="about-section">
+    <main>
+      <!-- ABOUT HERO -->
+      <section class="about-section">
         <div class="about-hero">
-            <div class="about-copy">
-                <h1 class="hero-title">
-                    Hi, I’m <span class="script-name">Bhavya</span>
-                </h1>
+          <div class="about-copy">
+            <h1 class="hero-title">
+              Hi, I’m <span class="script-name">Bhavya</span>
+            </h1>
 
-                <p class="about-intro">
-                    I’m a fourth-year undergraduate at Drexel University in the Pennoni Honors College,
-                    majoring in Computer Science with a minor in User Experience &amp; Interaction Design.
-                    I recently wrapped up a project management internship at Exelon and I’m excited to keep
-                    learning across user research, product design, psychology, and front-end development.
-                </p>
+            <p class="about-intro">
+              I’m a fourth-year undergraduate at Drexel University in the Pennoni Honors College,
+              majoring in Computer Science with a minor in User Experience &amp; Interaction Design.
+              I recently wrapped up a project management internship at Exelon and I’m excited to keep
+              learning across user research, product design, psychology, and front-end development.
+            </p>
 
-                <p>
-                    I design with empathy and code with curiosity. My approach blends human-centered research,
-                    clear interaction patterns, and visual craft to make digital experiences that are useful,
-                    accessible, and delightful.
-                </p>
+            <p>
+              I design with empathy and code with curiosity. My approach blends human-centered research,
+              clear interaction patterns, and visual craft to make digital experiences that are useful,
+              accessible, and delightful.
+            </p>
 
-                <p>
-                    When I’m not working on digital or artistic projects, you’ll probably find me dancing,
-                    exploring new restaurants, showing up for student org events, traveling, or trying
-                    something completely new just to learn from it.
-                </p>
-            </div>
+            <p>
+              When I’m not working on digital or artistic projects, you’ll probably find me dancing,
+              exploring new restaurants, showing up for student org events, traveling, or trying
+              something completely new just to learn from it.
+            </p>
+          </div>
 
-            <div class="about-visual">
-                <picture>
-                    <source media="(min-width: 48rem)" srcset="penoni.png">
-                    <img src="penoni.png" class="about-photo" alt="Bhavya at a Drexel Pennoni Honors College event table">
-                </picture>
-            </div>
+          <div class="about-visual">
+            <picture>
+              <source media="(min-width: 48rem)" srcset="penoni.png">
+              <img src="penoni.png" class="about-photo" alt="Bhavya at a Drexel Pennoni Honors College event table">
+            </picture>
+          </div>
         </div>
 
+        <!-- ABOUT HIGHLIGHTS -->
         <section class="about-highlights">
-            <div class="about-highlights-header">
-                <h2>More of what shapes me</h2>
-                <p>Beyond classes and code, these are a few parts of my life that influence how I think, lead, and create.</p>
-            </div>
+          <div class="about-highlights-header">
+            <h2>More of what shapes me</h2>
+            <p>Beyond classes and code, these are a few parts of my life that influence how I think, lead, and create.</p>
+          </div>
 
-            <div class="about-card-grid">
-                <article class="about-card">
-                    <img src="disa.jpg" alt="Bhavya with the Drexel Indian Student Association team">
-                    <div class="about-card-content">
-                        <h3>Leading Community</h3>
-                        <p>As President of the Drexel Indian Student Association, I help organize events, lead teams, and create spaces that help students feel connected.</p>
-                    </div>
-                </article>
+          <div class="about-card-grid">
+            <article class="about-card">
+              <img src="disa.jpg" alt="Bhavya with the Drexel Indian Student Association team">
+              <div class="about-card-content">
+                <h3>Leading Community</h3>
+                <p>As President of the Drexel Indian Student Association, I help organize events, lead teams, and create spaces that help students feel connected.</p>
+              </div>
+            </article>
 
-                <article class="about-card">
-                    <img src="star.jpg" alt="Bhavya presenting research-related work">
-                    <div class="about-card-content">
-                        <h3>Research &amp; Design</h3>
-                        <p>I enjoy combining research, observation, and structure to better understand people and make stronger design decisions.</p>
-                    </div>
-                </article>
+            <article class="about-card">
+              <img src="star.jpg" alt="Bhavya presenting research-related work">
+              <div class="about-card-content">
+                <h3>Research &amp; Design</h3>
+                <p>I enjoy combining research, observation, and structure to better understand people and make stronger design decisions.</p>
+              </div>
+            </article>
 
-                <article class="about-card">
-                    <img src="exploring.jpg" alt="Bhavya exploring the city">
-                    <div class="about-card-content">
-                        <h3>Exploring</h3>
-                        <p>Trying new places, new foods, and new environments keeps me curious, and that same curiosity shows up in how I approach design problems.</p>
-                    </div>
-                </article>
+            <article class="about-card">
+              <img src="exploring.jpg" alt="Bhavya exploring the city">
+              <div class="about-card-content">
+                <h3>Exploring</h3>
+                <p>Trying new places, new foods, and new environments keeps me curious, and that same curiosity shows up in how I approach design problems.</p>
+              </div>
+            </article>
 
-                <article class="about-card">
-                    <img src="snapshotting.jpg" alt="Bhavya capturing creative moments outdoors">
-                    <div class="about-card-content">
-                        <h3>Creative Eye</h3>
-                        <p>I’m drawn to visual detail, storytelling, and mood. A lot of my creative ideas begin with noticing something small and turning it into something intentional.</p>
-                    </div>
-                </article>
-            </div>
+            <article class="about-card">
+              <img src="snapshotting.jpg" alt="Bhavya capturing creative moments outdoors">
+              <div class="about-card-content">
+                <h3>Creative Eye</h3>
+                <p>I’m drawn to visual detail, storytelling, and mood. A lot of my creative ideas begin with noticing something small and turning it into something intentional.</p>
+              </div>
+            </article>
+          </div>
         </section>
 
+        <!-- SKILLS -->
         <section class="skills-section">
-            <h2>Skills &amp; Hobbies</h2>
+          <h2>Skills &amp; Hobbies</h2>
 
-            <div class="skills-grid">
-                <span class="skill">User Research</span>
-                <span class="skill">Wireframing</span>
-                <span class="skill">Prototyping</span>
-                <span class="skill">Accessibility</span>
-                <span class="skill">HTML &amp; CSS</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">React</span>
-                <span class="skill">Python</span>
-                <span class="skill">Data Analysis</span>
-                <span class="skill">Figma</span>
-                <span class="skill">Power BI</span>
-                <span class="skill">Excel</span>
-                <span class="skill">SQL</span>
-                <span class="skill">Node.js</span>
-                <span class="skill">REST APIs</span>
-                <span class="skill">Agile / Jira</span>
-                <span class="skill">Automation</span>
-                <span class="skill">Salesforce</span>
-                <span class="skill">Project Management</span>
-                <span class="skill">Painting</span>
-                <span class="skill">Dancing</span>
-                <span class="skill">Public Speaking</span>
-                <span class="skill">Community Org</span>
-            </div>
+          <div class="skills-grid">
+            <span class="skill">User Research</span>
+            <span class="skill">Wireframing</span>
+            <span class="skill">Prototyping</span>
+            <span class="skill">Accessibility</span>
+            <span class="skill">HTML &amp; CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Python</span>
+            <span class="skill">Data Analysis</span>
+            <span class="skill">Figma</span>
+            <span class="skill">Power BI</span>
+            <span class="skill">Excel</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">Agile / Jira</span>
+            <span class="skill">Automation</span>
+            <span class="skill">Salesforce</span>
+            <span class="skill">Project Management</span>
+            <span class="skill">Painting</span>
+            <span class="skill">Dancing</span>
+            <span class="skill">Public Speaking</span>
+            <span class="skill">Community Org</span>
+          </div>
         </section>
-    </section>
-</main>
+      </section>
+    </main>
 
-<footer class="site-footer">
-    <div class="footer-inner">
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
         <h3>Let’s work together</h3>
         <p>If you’d like to collaborate, ask about my work, or just say hello… reach out.</p>
         <a class="footer-cta" href="mailto:bbi23@drexel.edu">Email me</a>
 
         <div class="footer-links">
-            <a href="https://www.linkedin.com/in/bhavya-isotia-203a78282/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="Bhavya_Resume.pdf" target="_blank">Resume</a>
+          <a href="https://www.linkedin.com/in/bhavya-isotia-203a78282/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="Bhavya_Resume.pdf" target="_blank">Resume</a>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<div class="copyright-strip">
-    <div class="copyright-inner">
+    <!-- Copyright Strip -->
+    <div class="copyright-strip">
+      <div class="copyright-inner">
         © 2026 Bhavya Isotia
+      </div>
     </div>
-</div>
-
-</div>
-
+  </div>
 </body>
 </html>

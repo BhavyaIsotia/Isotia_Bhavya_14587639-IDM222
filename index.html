@@ -1,215 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@500;600&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@500;600&family=Satisfy&display=swap" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhavya Isotia | Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavya Isotia | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body class="homepage">
+  <!-- Theme Toggle -->
+  <input type="checkbox" id="theme-toggle" class="theme-toggle">
 
-    <input type="checkbox" id="theme-switch" class="theme-switch-input">
+  <label for="theme-toggle" class="theme-switch" aria-label="Toggle dark mode">
+    <span class="switch-track">
+      <span class="switch-icon switch-moon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="presentation">
+          <path d="M21 14.2A8.5 8.5 0 0 1 9.8 3a9 9 0 1 0 11.2 11.2Z"></path>
+        </svg>
+      </span>
 
-    <label for="theme-switch" class="theme-switch" aria-label="Toggle dark mode">
-        <span class="theme-switch-track">
-            <span class="theme-switch-thumb"></span>
-        </span>
-    </label>
+      <span class="switch-icon switch-sun" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="presentation">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 1.8v2.5M12 19.7v2.5M22.2 12h-2.5M4.3 12H1.8M19.2 4.8l-1.8 1.8M6.6 17.4l-1.8 1.8M19.2 19.2l-1.8-1.8M6.6 6.6 4.8 4.8"></path>
+        </svg>
+      </span>
 
-    <div class="page-shell">
+      <span class="switch-thumb"></span>
+    </span>
+  </label>
 
-        <header class="site-header">
-            <div class="pill-nav-wrapper">
-                <nav class="pill-nav" aria-label="Primary navigation">
-                    <a class="active" href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="creative.html">Creative</a>
-                    <a href="resume.html">Resume</a>
-                </nav>
-            </div>
-        </header>
+<div class="page-shell">
+<header class="site-header">
 
-        <main>
-            <section class="hero-section">
-                <div class="hero-copy">
-                    <h1 class="hero-title">
-                        Hi, I’m <span class="script-name">Bhavya</span>
-                    </h1>
+<!-- UNIVERSAL PILL NAV -->
+<div class="pill-nav-wrapper">
+<nav class="pill-nav" aria-label="Primary navigation">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="creative.html">Creative</a>
+    <a href="resume.html">Resume</a>
+</nav>
+</div>
+</header>
 
-                    <p class="hero-tagline">Computer Science + UXID Student</p>
+<main>
+<!-- HERO -->
+<section class="hero-section">
+<div class="hero-copy">
+    <h1 class="hero-title">
+    Hi, I’m <span class="script-name">Bhavya</span>
+    </h1>
 
-                    <p class="hero-desc">
-                        I design and build thoughtful, user-first digital experiences by blending technology,
-                        creativity, and human-centered thinking.
-                    </p>
+    <p class="hero-tagline">Computer Science + UXID Student</p>
 
-                    <div class="hero-buttons">
-                        <a href="creative.html" class="hero-btn hero-btn-primary">View My Work</a>
-                        <a href="about.html" class="hero-btn hero-btn-secondary">About Me</a>
-                    </div>
-                </div>
+    <p class="hero-desc">
+    I design and build thoughtful, user-first digital experiences by blending technology,
+    creativity, and human-centered thinking.
+    </p>
 
-                <div class="hero-visual">
-                    <img class="hero-photo" src="Bhavya.JPG" alt="Bhavya Portrait">
-
-                    <div class="hero-note">
-                        <p class="hero-note-label">Currently exploring</p>
-                        <ul>
-                            <li>UX research</li>
-                            <li>front-end design systems</li>
-                            <li>creative interaction ideas</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="home-scroll-test">
-                <div class="section-heading">
-                    <h2>What I Love Working On</h2>
-                    <p>
-                        I enjoy creating digital experiences that feel simple, intuitive, and human.
-                        From designing interfaces to building front-end interactions, I love combining
-                        creative thinking with problem-solving to make things that actually help people.
-                    </p>
-                </div>
-
-                <div class="interest-grid">
-                    <article class="test-card">
-                        <h3>✨ UX Design</h3>
-                        <p>Wireframes, user flows, user research, usability testing.</p>
-                    </article>
-
-                    <article class="test-card">
-                        <h3>💻 Development</h3>
-                        <p>Python, Java, HTML, CSS, JavaScript, front-end thinking, component design &amp; OOP.</p>
-                    </article>
-
-                    <article class="test-card">
-                        <h3>🎨 Creative Work</h3>
-                        <p>Brand aesthetics, color palettes, personal projects, design explorations and all-rounded learning.</p>
-                    </article>
-                </div>
-            </section>
-
-            <div class="ticker" role="region" aria-label="Featured projects ticker">
-                <div class="ticker__track">
-                    <span class="ticker__item">• ZARA WEBSITE REDESIGN • UX RESEARCHER AND UI DESIGNER</span>
-                    <span class="ticker__item">• RESEARCH &amp; INNOVATION • UX RESEARCHER AND UI DESIGNER</span>
-                    <span class="ticker__item">• CREATIVE PROJECTS • UX RESEARCHER AND UI DESIGNER</span>
-                    <span class="ticker__item">• ZARA WEBSITE REDESIGN • UX RESEARCHER AND UI DESIGNER</span>
-                    <span class="ticker__item">• RESEARCH &amp; INNOVATION • UX RESEARCHER AND UI DESIGNER</span>
-                    <span class="ticker__item">• CREATIVE PROJECTS • UX RESEARCHER AND UI DESIGNER</span>
-                </div>
-            </div>
-
-            <section class="featured-work">
-                <div class="featured-header">
-                    <h2>Featured Work</h2>
-                    <p>Here's a snapshot of what I'm passionate about and what drives my work.</p>
-                </div>
-
-                <div class="featured-grid">
-                    <a href="zara.html" class="featured-card">
-                        <div class="card-accent"></div>
-                        <div class="featured-media">
-                            <img src="zara.jpg" alt="Mockup of redesigned Zara website">
-                        </div>
-                        <h3>Zara Website Redesign</h3>
-                        <p class="featured-desc">
-                            A study on how Zara.com could evolve visually and structurally without breaking the core brand.
-                        </p>
-                        <ul class="featured-meta">
-                            <li><strong>Role:</strong> UX/UI Designer, UX Researcher</li>
-                            <li><strong>Time:</strong> 4 Months</li>
-                            <li><strong>Tools:</strong> Figma, Canva</li>
-                        </ul>
-                        <span class="card-cta">Check It Out!</span>
-                    </a>
-
-                    <a href="constructivist.html" class="featured-card">
-                        <div class="card-accent"></div>
-                        <div class="featured-media">
-                            <img src="assets/generic/afterversion1.png" alt="Neo-constructivist homepage redesign with bold colors and shapes">
-                        </div>
-                        <h3>Neo Constructivist Exploration</h3>
-                        <p class="featured-desc">
-                            A bold visual study transforming a minimal template into a vibrant Constructivist + Memphis hybrid.
-                        </p>
-                        <ul class="featured-meta">
-                            <li><strong>Role:</strong> Visual Designer</li>
-                            <li><strong>Focus:</strong> Style exploration &amp; art direction</li>
-                            <li><strong>Tools:</strong> Figma, Procreate</li>
-                        </ul>
-                        <span class="card-cta">See Transformation</span>
-                    </a>
-
-                    <a href="surfspot.html" class="featured-card">
-                        <div class="card-accent"></div>
-                        <div class="featured-media">
-                            <img src="assets/surfspot/homepage.png" alt="SurfSpot social website homepage">
-                        </div>
-                        <h3>SurfSpot Social Website</h3>
-                        <p class="featured-desc">
-                            A community-focused surf platform designed to help surfers explore safely, connect locally, and share knowledge.
-                        </p>
-                        <ul class="featured-meta">
-                            <li><strong>Role:</strong> Web Developer</li>
-                            <li><strong>Tools:</strong> Node.js, PostgreSQL, JavaScript, HTML, Leaflet.js</li>
-                        </ul>
-                        <span class="card-cta">Check out the Website</span>
-                    </a>
-
-                    <a href="poetry.html" class="featured-card">
-                        <div class="card-accent"></div>
-                        <div class="featured-media">
-                            <img src="poemCover.png" alt="Soft-toned photo used as cover for poetry collection">
-                        </div>
-                        <h3>Poems</h3>
-                        <p class="featured-desc">
-                            A curated collection of tender, humorous, and myth-inspired poems exploring memory, identity, and belonging.
-                        </p>
-                        <ul class="featured-meta">
-                            <li><strong>Format:</strong> Poetry &amp; micro-stories</li>
-                            <li><strong>Themes:</strong> Motherhood, humor, myth, anxiety</li>
-                            <li><strong>Tools:</strong> Pen, Notes app, late nights</li>
-                        </ul>
-                        <span class="card-cta">Read the Collection</span>
-                    </a>
-                </div>
-            </section>
-
-            <section class="home-cta">
-                <h2>Let’s Connect</h2>
-                <p>Interested in learning more? Here are a few ways to explore my work.</p>
-
-                <div class="cta-buttons">
-                    <a href="about.html" class="cta-btn cta-btn-primary">Learn About Me</a>
-                    <a href="creative.html" class="cta-btn cta-btn-secondary">View My Work</a>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer">
-            <div class="footer-inner">
-                <h3>Get in Touch</h3>
-                <p>I’m always interested in new opportunities, projects, and conversations.</p>
-                <a href="mailto:bbi23@drexel.edu" class="footer-cta">✉️ Send me an email</a>
-            </div>
-        </footer>
-
-        <div class="copyright-strip">
-            <div class="copyright-inner">
-                © 2026 Bhavya Isotia
-            </div>
-        </div>
-
+    <div class="hero-buttons">
+    <a href="creative.html" class="hero-btn hero-btn-primary">View My Work</a>
+    <a href="about.html" class="hero-btn hero-btn-secondary">About Me</a>
     </div>
 
+</div>
+
+<div class="hero-visual">
+    <img class="hero-photo" src="Bhavya.JPG" alt="Bhavya portrait">
+
+    <div class="hero-note">
+    <p class="hero-note-label">Currently exploring</p>
+    <ul>
+        <li>UX research</li>
+        <li>front-end design systems</li>
+        <li>creative interaction ideas</li>
+    </ul>
+    </div>
+</div>
+</section>
+
+<!-- WHAT I LOVE WORKING ON -->
+<section class="home-scroll-test">
+<div class="section-heading">
+    <h2>What I Love Working On</h2>
+    <p>
+    I enjoy creating digital experiences that feel simple, intuitive, and human.
+    From designing interfaces to building front-end interactions, I love combining
+    creative thinking with problem-solving to make things that actually help people.
+    </p>
+</div>
+
+<div class="interest-grid">
+    <article class="test-card">
+    <h3>✨ UX Design</h3>
+    <p>Wireframes, user flows, user research, usability testing.</p>
+    </article>
+
+    <article class="test-card">
+    <h3>💻 Development</h3>
+    <p>Python, Java, HTML, CSS, JavaScript, front-end thinking, component design &amp; OOP.</p>
+    </article>
+
+    <article class="test-card">
+    <h3>🎨 Creative Work</h3>
+    <p>Brand aesthetics, color palettes, personal projects, design explorations and all-rounded learning.</p>
+    </article>
+</div>
+</section>
+
+<!-- MOVING TEXT (using TICKER)-->
+<div class="ticker" role="region" aria-label="Featured projects ticker">
+<div class="ticker__track">
+    <span class="ticker__item">• ZARA WEBSITE REDESIGN • UX RESEARCHER AND UI DESIGNER</span>
+    <span class="ticker__item">• RESEARCH &amp; INNOVATION • UX RESEARCHER AND UI DESIGNER</span>
+    <span class="ticker__item">• CREATIVE PROJECTS • UX RESEARCHER AND UI DESIGNER</span>
+
+    <span class="ticker__item">• ZARA WEBSITE REDESIGN • UX RESEARCHER AND UI DESIGNER</span>
+    <span class="ticker__item">• RESEARCH &amp; INNOVATION • UX RESEARCHER AND UI DESIGNER</span>
+    <span class="ticker__item">• CREATIVE PROJECTS • UX RESEARCHER AND UI DESIGNER</span>
+</div>
+</div>
+
+<!-- FEATURED WORK -->
+<section class="featured-work">
+<div class="featured-header">
+    <h2>Featured Work</h2>
+    <p>Here's a snapshot of what I'm passionate about and what drives my work.</p>
+</div>
+
+<div class="featured-grid">
+          
+          <!-- Zara -->
+          <a href="zara.html" class="featured-card">
+            <div class="card-accent"></div>
+            <div class="featured-media">
+              <img src="zara.jpg" alt="Mockup of redesigned Zara website">
+            </div>
+            <h3>Zara Website Redesign</h3>
+            <p class="featured-desc">
+              A study on how Zara.com could evolve visually and structurally without breaking the core brand.
+            </p>
+            <ul class="featured-meta">
+              <li><strong>Role:</strong> UX/UI Designer, UX Researcher</li>
+              <li><strong>Time:</strong> 4 Months</li>
+              <li><strong>Tools:</strong> Figma, Canva</li>
+            </ul>
+            <span class="card-cta">Check It Out!</span>
+          </a>
+
+          <!-- Constructivist -->
+          <a href="constructivist.html" class="featured-card">
+            <div class="card-accent"></div>
+            <div class="featured-media">
+              <img src="assets/generic/afterversion1.png" alt="Neo-constructivist homepage redesign with bold colors and shapes">
+            </div>
+            <h3>Neo Constructivist Exploration</h3>
+            <p class="featured-desc">
+              A bold visual study transforming a minimal template into a vibrant Constructivist + Memphis hybrid.
+            </p>
+            <ul class="featured-meta">
+              <li><strong>Role:</strong> Visual Designer</li>
+              <li><strong>Focus:</strong> Style exploration &amp; art direction</li>
+              <li><strong>Tools:</strong> Figma, Procreate</li>
+            </ul>
+            <span class="card-cta">See Transformation</span>
+          </a>
+
+          <!-- SurfSpot -->
+          <a href="surfspot.html" class="featured-card">
+            <div class="card-accent"></div>
+            <div class="featured-media">
+              <img src="assets/surfspot/homepage.png" alt="SurfSpot social website homepage">
+            </div>
+            <h3>SurfSpot Social Website</h3>
+            <p class="featured-desc">
+              A community-focused surf platform designed to help surfers explore safely, connect locally, and share knowledge.
+            </p>
+            <ul class="featured-meta">
+              <li><strong>Role:</strong> Web Developer</li>
+              <li><strong>Tools:</strong> Node.js, PostgreSQL, JavaScript, HTML, Leaflet.js</li>
+            </ul>
+            <span class="card-cta">Check out the Website</span>
+          </a>
+
+          <!-- Poetry -->
+          <a href="poetry.html" class="featured-card">
+            <div class="card-accent"></div>
+            <div class="featured-media">
+              <img src="poemCover.png" alt="Soft-toned photo used as cover for poetry collection">
+            </div>
+            <h3>Poems</h3>
+            <p class="featured-desc">
+              A curated collection of tender, humorous, and myth-inspired poems exploring memory, identity, and belonging.
+            </p>
+            <ul class="featured-meta">
+              <li><strong>Format:</strong> Poetry &amp; micro-stories</li>
+              <li><strong>Themes:</strong> Motherhood, humor, myth, anxiety</li>
+              <li><strong>Tools:</strong> Pen, Notes app, late nights</li>
+            </ul>
+            <span class="card-cta">Read the Collection</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- QUICK LINKS -->
+      <section class="home-cta">
+        <h2>Let’s Connect</h2>
+        <p>Interested in learning more? Here are a few ways to explore my work.</p>
+
+        <div class="cta-buttons">
+          <a href="about.html" class="cta-btn cta-btn-primary">Learn About Me</a>
+          <a href="creative.html" class="cta-btn cta-btn-secondary">View My Work</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <h3>Get in Touch</h3>
+        <p>I’m always interested in new opportunities, projects, and conversations.</p>
+        <a href="mailto:bbi23@drexel.edu" class="footer-cta">✉️ Send me an email</a>
+      </div>
+    </footer>
+
+    <div class="copyright-strip">
+      <div class="copyright-inner">
+        © 2026 Bhavya Isotia
+      </div>
+    </div>
+  </div>
 </body>
 </html>
