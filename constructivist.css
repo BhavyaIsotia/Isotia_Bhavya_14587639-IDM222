@@ -1,0 +1,215 @@
+.case-hero,
+.case-container {
+  width: 88%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-hero {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.case-hero-content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.case-label,
+.eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+}
+
+.case-hero-desc,
+.case-section p,.user-card p,
+.flow-image figcaption {
+  color: var(--text-soft);
+}
+
+.case-hero-desc {
+  max-width: 44rem;
+  margin-bottom: 1.2rem;
+}
+
+.case-pill-row,
+.case-meta-grid,
+.card-sort-grid,
+.user-insight-grid,
+.flow-gallery,
+.case-cta-block {
+  display: grid;
+  gap: 1rem;
+}
+
+.case-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(219, 100, 85, 0.14);
+  color: var(--text-main);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.case-pill-row {
+  margin-bottom: 1.3rem;
+}
+
+.case-pill-row .case-pill,
+.meta-pill {
+  justify-self: start;
+}
+
+.case-meta-grid p {
+  margin-top: 0.45rem;
+  color: var(--text-soft);
+}
+
+.case-hero-visual {
+  margin-top: 1.4rem;
+  padding: 0.85rem;
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: 1.2rem;
+  box-shadow: var(--shadow-card);
+}
+
+.case-hero-visual img,
+.flow-image img,
+.mockup-media video {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+}
+
+.case-container {
+  margin-bottom: 4rem;
+}
+
+.case-section {
+  margin-bottom: 3rem;
+}
+
+.case-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-sort-grid article,.user-card,
+.flow-image,.video-wrapper {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: 1.2rem;
+  box-shadow: var(--shadow-card);
+}
+
+.card-sort-grid article,
+.user-card {
+  padding: 1.2rem;
+}
+
+.card-sort-grid h3,
+.user-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.6rem;
+}
+
+.card-sort-grid ul {
+  padding-left: 1.2rem;
+}
+
+.card-sort-grid li {
+  margin-bottom: 0.45rem;
+}
+
+.dark {
+  padding: 1.3rem;
+  background: var(--surface-soft);
+  border: 1px solid var(--card-border);
+  border-radius: 1.4rem;
+  box-shadow: var(--shadow-card);
+}
+
+.pill-label {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin-bottom: 0.6rem;
+}
+
+.flow-gallery {
+  margin-top: 1rem;
+}
+
+.flow-image {
+  padding: 0.8rem;
+}
+
+.flow-image figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.95rem;
+}
+
+.single-gallery {
+  max-width: 34rem;
+}
+
+.video-wrapper {
+  margin-top: 1.2rem;
+  padding: 0.8rem;
+}
+
+.video-caption-note {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.case-cta-block {
+  margin-top: 1.3rem;
+}
+
+@media (min-width: 48rem) {
+  .case-hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .case-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .case-pill-row {
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  .case-meta-grid,.user-insight-grid,
+  .flow-gallery,.case-cta-block {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card-sort-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-cta-block {
+    align-items: start;
+  }
+}
+
+@media (min-width: 75rem) {
+  .card-sort-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .single-gallery {
+    max-width: 38rem;
+  }
+}
