@@ -160,7 +160,15 @@
 }
 
 .single-gallery {
-  max-width: 34rem;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+  max-width: 100%;
+}
+
+.single-gallery .flow-image {
+  width: 100%;
+  max-width: 48rem;
+  justify-self: center;
 }
 
 .video-wrapper {
@@ -207,9 +215,5 @@
 @media (min-width: 75rem) {
   .card-sort-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .single-gallery {
-    max-width: 38rem;
   }
 }
