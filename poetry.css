@@ -1,0 +1,141 @@
+.case-hero,
+.case-container {
+  width: 88%;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-hero {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.case-hero-content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.case-label {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+}
+
+.case-hero-desc,
+.case-section p {
+  color: var(--text-soft);
+}
+
+.case-hero-desc {
+  max-width: 42rem;
+  margin-bottom: 1.2rem;
+}
+
+.case-pill-row {
+  display: grid;
+  gap: 1rem;
+}
+
+.case-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(207, 168, 166, 0.16);
+  color: var(--text-main);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.case-pill-row .case-pill {
+  justify-self: start;
+}
+
+.case-hero-visual {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: 1.2rem;
+  padding: 0.8rem;
+  box-shadow: var(--shadow-card);
+}
+
+.case-hero-visual img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+}
+
+.case-container {
+  margin-bottom: 4rem;
+}
+
+.case-section {
+  margin-bottom: 3rem;
+}
+
+.case-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.writing-card {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  box-shadow: var(--shadow-card);
+}
+
+.writing-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.writing-card p {
+  margin-bottom: 1rem;
+}
+
+.poem {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--text-main);
+}
+
+@media (min-width: 48rem) {
+  .case-hero {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: start;
+  }
+
+  .case-hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .case-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .case-pill-row {
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  .writing-card {
+    padding: 1.5rem;
+  }
+
+  .poem {
+    font-size: 1.05rem;
+  }
+}
