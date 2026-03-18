@@ -8,7 +8,7 @@
 
 .case-hero {
   margin-top: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   display: grid;
   gap: 1.5rem;
 }
@@ -65,6 +65,7 @@
   border-radius: 1.2rem;
   padding: 0.8rem;
   box-shadow: var(--shadow-card);
+  width: 100%;
 }
 
 .case-hero-visual img {
@@ -81,9 +82,20 @@
   margin-bottom: 3rem;
 }
 
+.case-section + .case-section {
+  padding-top: 0.75rem;
+}
+
 .case-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+#intro {
+  background: rgba(207, 168, 166, 0.08);
+  border: 1px solid rgba(207, 168, 166, 0.16);
+  border-radius: 1.2rem;
+  padding: 1.3rem;
 }
 
 .writing-card {
@@ -101,6 +113,11 @@
 
 .writing-card p {
   margin-bottom: 1rem;
+  max-width: 38rem;
+}
+
+.writing-card + .writing-card {
+  margin-top: 1rem;
 }
 
 .poem {
@@ -111,12 +128,21 @@
   font-size: 1rem;
   line-height: 1.9;
   color: var(--text-main);
+  background: var(--surface-soft);
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 @media (min-width: 48rem) {
   .case-hero {
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
     align-items: start;
+  }
+
+  .case-hero-visual {
+    width: 100%;
+    align-self: start;
   }
 
   .case-hero-content h1 {
@@ -137,5 +163,25 @@
 
   .poem {
     font-size: 1.05rem;
+    padding: 1.25rem;
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 62.5rem) {
+  .case-hero {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .case-hero-visual {
+    display: none;
+  }
+
+  .case-hero-content h1 {
+    font-size: 3.4rem;
+  }
+
+  .case-pill-row {
+    grid-template-columns: repeat(2, max-content);
   }
 }
