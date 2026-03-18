@@ -148,6 +148,29 @@
   margin-top: 1rem;
 }
 
+.cta-btn {
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta-btn:hover,
+.cta-btn:focus-visible {
+  transform: translateY(-2px);
+}
+
+.cta-btn-primary {
+  background: var(--accent-dark);
+  color: #fff;
+}
+
+.cta-btn-secondary {
+  border: 1px solid var(--accent);
+  color: var(--text-main);
+}
+
 @media (min-width: 48rem) {
   .case-hero-content h1 {
     font-size: 4rem;
@@ -171,6 +194,8 @@
 
   .case-cta-block {
     align-items: start;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: start;
   }
 }
 
