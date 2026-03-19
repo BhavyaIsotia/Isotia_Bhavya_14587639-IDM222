@@ -16,7 +16,7 @@
   --accent-dark-hover: hsl(341, 50%, 33%);
 
   --card-border: #e8e6e4;
-
+  
   --radius-lg: 28px;
   --radius-md: 20px;
   --radius-sm: 14px;
@@ -85,6 +85,7 @@ h3 {
   color: var(--text-main);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 .theme-switch {
   position: absolute;

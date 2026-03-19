@@ -59,6 +59,7 @@
   gap: 1rem;
   overflow-x: auto;
   padding: 0.35rem 0 1rem;
+  /* keeping scroll pictures for smaller screens*/
   scroll-snap-type: x mandatory;
 }
 
@@ -160,6 +161,7 @@
     margin-top: 2.5rem;
   }
 
+  /* switched it back to a regular grid on large screens */
   .about-card-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));

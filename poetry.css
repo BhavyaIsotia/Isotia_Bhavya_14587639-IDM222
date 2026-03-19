@@ -98,6 +98,9 @@
   padding: 1.3rem;
 }
 
+/* had to add this inner block for cleared reading area(i dont really like how it looks) 
+ MAKE IT BETTER IF THERE IS TIME */
+
 .writing-card {
   background: var(--surface);
   border: 1px solid var(--card-border);
@@ -168,6 +171,7 @@
 }
 
 @media (min-width: 48rem) and (max-width: 62.5rem) {
+  /* hiding the image here worked better than forcing a cramped in between layout(looked off)*/
   .case-hero {
     grid-template-columns: 1fr;
     gap: 1rem;
