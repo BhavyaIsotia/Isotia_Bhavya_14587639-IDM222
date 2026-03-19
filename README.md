@@ -96,7 +96,7 @@ So this project builds on my earlier work, but expands it into a much larger and
 
 ## Use of AI / ChatGPT
 
-I also used ChatGPT at times when I needed help understanding how to do a specific thing in my code, especially when I was stuck on layout issues, validators, accessibility fixes, or CSS behavior.
+I also used ChatGPT when I needed help understanding how to do a specific thing in my code.(Did not make it to my project, but I took help) 
 
 What I used it for:
 
